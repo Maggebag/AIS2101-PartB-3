@@ -56,8 +56,8 @@ def uniform_crossover(parent1, parent2, crossover_rate):
 
     for char1, char2 in zip(parent1, parent2):
         if random.random() < crossover_rate:
-            child1 += char1
-            child2 += char2
+            child1 += char2
+            child2 += char1
         else:
             child1 += char1
             child2 += char2
